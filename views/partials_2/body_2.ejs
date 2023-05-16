@@ -1,0 +1,74 @@
+<style type="text/css">
+    .buttonRoom {
+        font-family: ArchivoMedium;
+        color: white;
+        background: #5611bb;
+        margin-top: 5px;
+    }
+    .cardColor {
+        background: #f8f4fe;
+    }
+    .joinButton {
+        color: white;
+        background: #5611bb;
+        font-family: ArchivoSemiBold;
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+    .joinButton:hover {
+        background: #8d4bef;
+        color: white;
+        transition: 0.3s;
+    }
+    .logoCustom {
+        width: 300px;
+    }
+    .titleCol {
+        font-family: ArchivoMedium;
+        font-size: 1rem;
+    }
+
+</style>
+</head>
+
+<body class="bgColorBody">
+<div class="container my-5">
+    <div class="container p-3">
+        <div class="row py-6">
+            <img class="logoCustom img-fluid mx-auto my-2" src="logoViolet.png" alt="KroomLogoViolet">
+        </div>
+        <div class="vstack row text-center align-items-center">
+            <span class="titleCol"><p class="my-2"> Select a chatroom </p></span>
+            <div class="row container justify-content-center gap-3">
+                <div class="cardColor col-sm-3 card p-3 shadow-sm"> 
+                    <div class="ratio ratio-1x1">
+                        <img src="bp.jpg" class="card rounded" alt="Blackpink">
+                    </div>
+                    <input onclick="chatroom()" class="buttonRoomInput btn-check" type="button" id="blackpink" name="options-outlined" autocomplete="off">
+                    <label class="buttonRoom btn" for="blackpink">Blackpink</label>
+                </div>
+                <div class="cardColor col-sm-3 card p-3 shadow-sm"> 
+                    <div class="ratio ratio-1x1">
+                        <img src="bts.jpg" class="card rounded" alt="BTS">
+                    </div>
+                    <input onclick="chatroom()" class="buttonRoomInput btn-check" type="button" id="bts" name="options-outlined" autocomplete="off">
+                    <label class="buttonRoom btn" for="bts">BTS</label>
+                </div>
+                <div class="cardColor col-sm-3 card p-3 shadow-sm"> 
+                    <div class="ratio ratio-1x1">
+                        <img src="newjeans.jpg" class="card rounded" alt="Newjeans">
+                    </div>
+                    <input onclick="chatroom()" class="buttonRoomInput btn-check" type="button" id="newjeans" name="options-outlined" autocomplete="off">
+                    <label class="buttonRoom btn" for="newjeans">Newjeans</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+    function chatroom() {
+        location.replace("/chatroom");
+    }
+</script>

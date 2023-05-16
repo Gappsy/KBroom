@@ -1,0 +1,63 @@
+<style type="text/css">
+    /*Color palette: #0b0019, #31006e, #5611bb, #8d4bef, #e9dcfc, #f8f4fe*/
+    .bgColorBody {
+        background: #31006e;
+    }
+    .col2button {
+        color: white;
+        background: #5611bb;
+        border: none;
+        font-family: ArchivoSemiBold;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .col2button:hover {
+        background: #8d4bef;
+        color: white;
+        transition: 0.3s;
+    }
+    .col2input {
+        font-family: ArchivoMedium;
+        font-size: 1rem;
+    }
+    .uname {
+        color: #0b0019;
+        font-family: ArchivoMedium;
+        font-size: 1rem;
+    }
+    .bottomRow {
+        background: #e9dcfc;
+    }
+    .topRow {
+        background: none;
+    }
+</style>
+</head>
+
+<body class="bgColorBody">
+<div class="container position-absolute top-50 start-50 translate-middle">
+    <div class="topRow container-fluid text-center my-3">
+        <div class="container my-3">
+            <div class="row align-items-center justify-content-center gap-3 px-4 py-4">
+                <div class="col-sm-7 align-middle">
+                    <img class="img-fluid" src="logoWhite.png" alt="kroomLogoWhite">
+                    
+                </div>
+                <div class="col-sm-7 card p-3 align-items-center align-middle shadow">
+                    <div class="col-auto my-1 w-100">
+                    <label class="uname" for="username"> Username </label>
+                    <input class="col2input py-1 px-2 form-control shadow-none form-control-md rounded-1" type="text" name="username" placeholder="Enter your username" required> 
+                    </div>
+                    <button  class="col2button btn rounded shadow py-1 px-4" type="button" onclick="menu()"> Get Started </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script>
+    function menu() {
+        location.replace("/menu");
+    }
+</script>
